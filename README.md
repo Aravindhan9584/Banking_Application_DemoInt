@@ -1,43 +1,20 @@
 # Banking Products Dashboard
 
 A single page that shows different banking products (savings, credit cards, loans and wealth) together in one view. You can switch between categories, search by name and filter by status.
-
-## How to run
-
 ```bash
 npm install
 npm run dev
 ```
-
+```
 Then open http://localhost:5173
-
+```
 ## Tech used
 
 - **React** for the UI
 - **Vite** to run and build the project
 - **Plain CSS** (no UI library). The grid uses CSS Grid so it works on mobile and desktop.
-
 I didn't build a backend. The product data is hard-coded in `src/data/products.js`.
 
-## Folder structure
-
-```
-src/
-  data/products.js          hard-coded product list
-  services/productService.js  returns the products (could call a real API later)
-  hooks/useProducts.js      loads products, handles loading/error state
-  config/productConfig.js   category and status labels, button text
-  utils/filterProducts.js   search / category / status filtering
-  utils/format.js           formats currency, percent and dates
-  components/
-    CategoryTabs.jsx
-    FilterBar.jsx
-    ProductGrid.jsx
-    ProductCard.jsx
-    ProductModal.jsx
-    StatusBadge.jsx
-  App.jsx
-```
 
 ## Data and UI
 
